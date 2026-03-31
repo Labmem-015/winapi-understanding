@@ -8,8 +8,30 @@
 		{
             "name": "ninja-debug",
 			"displayName": "Debug config with Ninja",
-			"inherits": "debug",
+			"inherits": "debug-preset",
 			"generator": "Ninja"
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "ninja-debug",
+			"displayName": "Debug config with Ninja",
+			"configurePreset": "ninja-debug"
+		}
+	],
+	"workflowPresets": [
+		{
+			"name": "ninja-debug",
+			"steps": [
+				{
+					"name": "ninja-debug",
+					"type": "configure"
+				},
+				{
+					"name": "ninja-debug",
+					"type": "build"
+				}
+			]
 		}
 	]
 }

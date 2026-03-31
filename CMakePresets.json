@@ -26,7 +26,7 @@
 			}
 		},
 		{
-			"name": "debug",
+			"name": "debug-preset",
 			"displayName": "Debug",
 			"inherits": "default",
 			"cacheVariables": {
@@ -36,21 +36,21 @@
 	],
 	"buildPresets": [
 		{
-			"name": "debug",
+			"name": "debug-preset",
 			"displayName": "Debug",
-			"configurePreset": "debug"
+			"configurePreset": "debug-preset"
 		}
 	],
 	"workflowPresets": [
 		{
-			"name": "debug",
+			"name": "debug-preset",
 			"steps": [
 				{
-					"name": "debug",
+					"name": "debug-preset",
 					"type": "configure"
 				},
 				{
-					"name": "debug",
+					"name": "debug-preset",
 					"type": "build"
 				}
 			]
