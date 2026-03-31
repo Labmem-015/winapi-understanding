@@ -20,7 +20,9 @@
 			"cacheVariables": {
 				"CMAKE_CXX_SCAN_FOR_MODULES": false,
 				"CMAKE_EXPORT_COMPILE_COMMANDS": true,
-				"CMAKE_VERBOSE_MAKEFILE": false
+				"CMAKE_VERBOSE_MAKEFILE": false,
+				"CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+				"VCPKG_INSTALLED_DIR": "${sourceDir}/vcpkg_installed"
 			}
 		},
 		{
