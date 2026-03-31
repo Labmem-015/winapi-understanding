@@ -18,6 +18,10 @@ target_precompile_headers(overlapped REUSE_FROM pch)
 add_executable(create_file src/create_file.cpp)
 target_precompile_headers(create_file REUSE_FROM pch)
 
+add_executable(process_spawner src/process_spawner.cpp)
+target_precompile_headers(process_spawner REUSE_FROM pch)
+
+
 # add_executable(register_modifier src/register_modifier.cpp)
 # target_precompile_headers(register_modifier REUSE_FROM pch)
 # target_link_libraries(register_modifier PUBLIC WIL::WIL iphlpapi pdh wbemuuid ws2_32 shlwapi netapi32 fltlib rpcrt4)

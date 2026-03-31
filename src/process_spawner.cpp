@@ -1,10 +1,3 @@
-#include <Windows.h>
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <filesystem>
-#include <vector>
-
 //Returns the last Win32 error, in string format. Returns an empty string if there is no error.
 std::string GetLastErrorAsString()
 {
