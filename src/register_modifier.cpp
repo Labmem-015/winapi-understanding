@@ -12,13 +12,3 @@ int main(int argc, char* argv[]) {
     }
     return EXIT_SUCCESS;
 }
-
-//file(GLOB src *.cpp)
-//file(GLOB inc *.hpp)
-//
-//add_executable(reg-modifier ${inc} ${src})
-//target_compile_features(reg-modifier PUBLIC cxx_std_20)
-//target_precompile_headers(reg-modifier PRIVATE ${PROJECT_SOURCE_DIR}/pch.hpp)
-//
-//find_package(wil CONFIG REQUIRED)
-//target_link_libraries(reg-modifier PUBLIC WIL::WIL iphlpapi pdh wbemuuid ws2_32 shlwapi netapi32 fltlib rpcrt4)

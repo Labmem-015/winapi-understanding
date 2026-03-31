@@ -1,6 +1,3 @@
-#include <iostream>
-#include <Windows.h>
-
 int createFile() {
 	LPCSTR filename = R"(C:\created_file.txt)";
 	HANDLE hFile = CreateFileA(filename, GENERIC_READ | GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);

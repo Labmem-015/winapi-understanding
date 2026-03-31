@@ -7,7 +7,7 @@ void read_from_file(OVERLAPPED* overlapped) {
 }
 
 int main(int argc, char* argv[]) {
-    HANDLE hFile = CreateFile(
+    HANDLE hFile = CreateFileW(
         L"test_overlapped_io.txt",
         GENERIC_READ | GENERIC_WRITE,
         FILE_SHARE_READ | FILE_SHARE_WRITE,
