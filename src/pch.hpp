@@ -10,3 +10,5 @@
 #include <fstream>
 
 #include <Windows.h>
+
+#include <wil/registry.h>

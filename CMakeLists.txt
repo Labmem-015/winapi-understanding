@@ -17,6 +17,7 @@ find_package(wil CONFIG REQUIRED)
 
 add_library(pch STATIC src/dummy_pch.cpp)
 target_precompile_headers(pch PUBLIC src/pch.hpp)
+target_link_libraries(pch PUBLIC WIL::WIL)
 
 add_executable(overlapped src/overlapped.cpp)
 target_precompile_headers(overlapped REUSE_FROM pch)
@@ -29,4 +30,4 @@ target_precompile_headers(process_spawner REUSE_FROM pch)
 
 add_executable(register_modifier src/register_modifier.cpp)
 target_precompile_headers(register_modifier REUSE_FROM pch)
-target_link_libraries(register_modifier PUBLIC WIL::WIL iphlpapi pdh wbemuuid ws2_32 shlwapi netapi32 fltlib rpcrt4)
+target_link_libraries(register_modifier PUBLIC pch iphlpapi pdh wbemuuid ws2_32 shlwapi netapi32 fltlib rpcrt4)
