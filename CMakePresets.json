@@ -8,6 +8,7 @@
 		{
 			"hidden": true,
 			"name": "default",
+			"generator": "Visual Studio 18 2026",
 			"binaryDir": "${sourceDir}/build/${presetName}",
 			"installDir": "${sourceDir}/install/${presetName}",
 			"architecture": {

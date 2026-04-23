@@ -15,6 +15,8 @@ set(CMAKE_VS_WINRT_BY_DEFAULT 1)
 
 project(winapi-understanding DESCRIPTION "Understanding Win32 API features" VERSION 0.1.0 LANGUAGES CXX)
 
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
 find_package(wil CONFIG REQUIRED)
 find_package(cppwinrt CONFIG REQUIRED)
 
@@ -38,3 +40,11 @@ target_link_libraries(register_modifier PRIVATE pch iphlpapi pdh wbemuuid ws2_32
 add_executable(screen_capture src/screen_capture.cpp)
 target_precompile_headers(screen_capture REUSE_FROM pch)
 target_link_libraries(screen_capture PRIVATE pch Microsoft::CppWinRT windowsapp)
+
+add_executable(parent_process_detector src/parent_process_detector.cpp)
+target_precompile_headers(parent_process_detector REUSE_FROM pch)
+target_link_libraries(parent_process_detector PRIVATE pch)
+
+add_executable(message_box src/message_box.cpp)
+target_precompile_headers(message_box REUSE_FROM pch)
+target_link_libraries(message_box PRIVATE pch)

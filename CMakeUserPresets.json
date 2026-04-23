@@ -6,7 +6,7 @@
 	},
 	"configurePresets": [
 		{
-            "name": "ninja-debug",
+      "name": "ninja-debug",
 			"displayName": "Debug config with Ninja",
 			"inherits": "debug-preset",
 			"generator": "Ninja"
